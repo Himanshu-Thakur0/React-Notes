@@ -183,6 +183,4 @@ src/
 * Use Context API for **small to medium-scale applications**.
 * For large-scale apps with complex state, consider Redux or Zustand.
 
----
 
-Let me know if you’d like to add TypeScript support, theme context, or dark mode toggle examples!
