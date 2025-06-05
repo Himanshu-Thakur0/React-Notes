@@ -1,7 +1,16 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 
-const initialState = {
-    todos :[{id:nanoid , text:"Hello Redux Todo"}]
+interface todo {
+    id:string,
+    text:string
+}
+
+interface todoState {
+    todos: todo[]
+}
+
+const initialState:todoState = {
+    todos :[{id:nanoid() , text:"Hello Redux Todo"}]
 }
 
 const todoSlice = createSlice({
@@ -10,7 +19,7 @@ const todoSlice = createSlice({
     reducers : {
         addTodo : (state,action) => { 
             const todo = {
-                id:nanoid,
+                id:nanoid(),
                 text:action.payload
             }
 
