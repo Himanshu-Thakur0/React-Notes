@@ -6,11 +6,11 @@ import Todo from './components/Todo'
 function App() {
 
   return (
-    <>
-      <h1>Redux ToolKit Todo App</h1>
+    <div className='w-full h-screen p-10'>
+      <h1 className='text-5xl font-bold '><center>Redux ToolKit Todo App</center></h1>
       <AddTodo/>
       <Todo/>
-    </>
+    </div>
   )
 }
 

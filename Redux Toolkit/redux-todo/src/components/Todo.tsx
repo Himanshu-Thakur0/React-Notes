@@ -13,7 +13,7 @@ const Todo = () => {
     const dispatch = useDispatch<AppDispatch>();
 
     return (
-        <div>
+        <>
             <div>Todos</div>
             <ul className="list-none">
                 {todos.map((todo: todo) => (
@@ -44,7 +44,7 @@ const Todo = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </>
     );
 };
 
